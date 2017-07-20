@@ -173,7 +173,7 @@ class DDIClient(object):
 
     async def get_binary_resource(self, api_path, dl_location,
                                   mime='application/octet-stream',
-                                  chunk_size=512, timeout=3600, **kwargs):
+                                  chunk_size=4096, timeout=3600, **kwargs):
         """
         Helper method for binary HTTP GET API requests.
 
