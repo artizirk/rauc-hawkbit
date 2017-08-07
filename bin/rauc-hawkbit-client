@@ -64,7 +64,8 @@ def main():
     TENANT_ID = config.get('client', 'tenant_id')
     TARGET_NAME = config.get('client', 'target_name')
     AUTH_TOKEN = config.get('client', 'auth_token')
-    ATTRIBUTES = {'MAC':config.get('client', 'mac_address')}
+    ATTRIBUTES = {'MAC':config.get('client', 'mac_address'), 
+        'Serial':config.get('client', 'serial_number')}
     BUNDLE_DL_LOCATION = config.get('client', 'bundle_download_location')
 
     if args.debug:
